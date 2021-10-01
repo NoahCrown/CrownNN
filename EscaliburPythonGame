@@ -1,0 +1,36 @@
+print('''
+*******************************************************************************
+
+                           ___
+                          ( ((
+                           ) ))
+  .::.                    / /(
+ 'M .-;-.-.-.-.-.-.-.-.-/| ((::::::::::::::::::::::::::::::::::::::::::::::.._
+(J ( ( ( ( ( ( ( ( ( ( ( |  ))   -====================================-      _.>
+ `P `-;-`-`-`-`-`-`-`-`-\| ((::::::::::::::::::::::::::::::::::::::::::::::''
+  `::'                    \ \(
+                           ) ))
+                          (_((
+
+*******************************************************************************
+''')
+print("Welcome to Escalibur: The game of swords.")
+print("Your mission is to defeat the demon king.") 
+
+choice_1 = input("Where do you wanna go? Veilheim or Stratic? ").lower()
+
+if choice_1 == "veilheim":
+  choice_2 = input("You've arrived at Veilheim City safetly, The king offers you a sword or a crossbow, which will you pick?").lower()
+  if choice_2 == "sword":
+    choice_3 = input("You have recieved the Escalibur, the legendary sword of braoins. The demon king suddenly arrived what skill would you like you use? Skull splitter, heaven crusher, or sword dance? ").lower()
+    if choice_3 == "heaven crusher":
+      print("You managed to hit the Demon King with the Heaven Crusher destroying his life orb and saving Veilheim! You win!")
+    else:
+      print("The demon king teleported in front of you and sucked your soul. GAME OVER")
+
+  else:
+    print("The crossbow was old and faulty, you shot yourself accidentaly, GAME OVER")
+
+else:
+  print("Stratic city was sieged, you got hit by an arrow in the knee.")
+  
