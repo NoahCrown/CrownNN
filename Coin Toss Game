@@ -1,0 +1,30 @@
+import random
+
+print("Welcome to heads or tails! ")
+print("You will win a brand new car if you guess the coin correctly. ")
+
+guess = input("What do you think the coin will be? Heads(H) or Tails(T)? ").lower()
+
+flip = random.randint(0, 1)
+
+if flip == 1:
+  n = "h"
+  print("Heads")
+else:
+  n = "t"
+  print("Tails")
+
+if guess == n:
+  print("You win!! Congratulations!! ")
+else: 
+  print("You lost, better luck next time! ")
+
+
+
+
+
+
+
+
+
+
