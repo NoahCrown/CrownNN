@@ -1,0 +1,33 @@
+from replit import clear
+
+from art import logo
+print(logo)
+info = {
+
+}
+def add_to_bid(given_name, amount_bid): 
+    info [given_name] = amount_bid
+    
+
+should_continue = True
+while should_continue:
+    name = str(input("What is your name?: "))
+    bid = int(input("What is your bid?: $"))
+    add_to_bid(given_name = name, amount_bid = bid)
+    
+    ask = str(input("Is there any other bidders in the room? 'y' or 'n'\n").lower())
+    if ask == "n":
+        should_continue = False
+    else:
+        clear()
+
+
+highest_bid = 0
+highest_bidder = ""
+for name in info:
+    amount = info[name]
+    if amount > highest_bid:
+        highest_bid = amount
+        highest_bidder = name
+print(f"{highest_bidder} has won the auction with ${highest_bid}")
+    
